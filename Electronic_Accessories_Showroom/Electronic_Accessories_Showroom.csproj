@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0056E361-5FA0-4A4F-ACBC-AF1375206A03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Electronic_Accessories_Showroom</RootNamespace>
+    <AssemblyName>Electronic_Accessories_Showroom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer_CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer_CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer_DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer_DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Electronic_Accessories_ShowroomDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Electronic_Accessories_ShowroomDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Electronic_Accessories_ShowroomDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Electronic_Accessories_ShowroomDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Distributor_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Distributor_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employee_Report_Details.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_Report_Details.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Distributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Distributor.Designer.cs">
+      <DependentUpon>frm_Add_New_Distributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Category.Designer.cs">
+      <DependentUpon>frm_Add_New_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.Designer.cs">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Customer.Designer.cs">
+      <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Product.Designer.cs">
+      <DependentUpon>frm_Add_New_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Brand.Designer.cs">
+      <DependentUpon>frm_Add_New_Brand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Stock.Designer.cs">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Admin_Entry_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Admin_Entry_Form.Designer.cs">
+      <DependentUpon>frm_Admin_Entry_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Customer_Entry_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customer_Entry_Form.Designer.cs">
+      <DependentUpon>frm_Customer_Entry_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Customer_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Customer_Report.Designer.cs">
+      <DependentUpon>frm_Customer_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Delete_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Delete_User.Designer.cs">
+      <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Distributor_Entry_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Distributor_Entry_Form.Designer.cs">
+      <DependentUpon>frm_Distributor_Entry_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Distributor_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Distributor_Report.Designer.cs">
+      <DependentUpon>frm_Distributor_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Employee_Entry_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Employee_Entry_Form.Designer.cs">
+      <DependentUpon>frm_Employee_Entry_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Employee_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Employee_Report.Designer.cs">
+      <DependentUpon>frm_Employee_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Loading.Designer.cs">
+      <DependentUpon>frm_Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main_Entry_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main_Entry_Form.Designer.cs">
+      <DependentUpon>frm_Main_Entry_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Product_Entry_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Product_Entry_Form.Designer.cs">
+      <DependentUpon>frm_Product_Entry_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Search_Or_Update_Distributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Search_Or_Update_Distributor.Designer.cs">
+      <DependentUpon>frm_Search_Or_Update_Distributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Search_Or_Update_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Search_Or_Update_Employee.Designer.cs">
+      <DependentUpon>frm_Search_Or_Update_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_User.Designer.cs">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Stock_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Stock_Report.Designer.cs">
+      <DependentUpon>frm_Stock_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_User.Designer.cs">
+      <DependentUpon>frm_Update_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_User_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_User_Management.Designer.cs">
+      <DependentUpon>frm_User_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_All_Distributors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_All_Distributors.Designer.cs">
+      <DependentUpon>frm_View_All_Distributors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_All_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_All_Employees.Designer.cs">
+      <DependentUpon>frm_View_All_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Customer_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Customer_Details.Designer.cs">
+      <DependentUpon>frm_View_Customer_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Stock_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Stock_Details.Designer.cs">
+      <DependentUpon>frm_View_Stock_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock_Report_Details.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Stock_Report_Details.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Customer_CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Customer_CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Distributor_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Distributor_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Report_Details.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Employee_Report_Details.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Distributor.resx">
+      <DependentUpon>frm_Add_New_Distributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Category.resx">
+      <DependentUpon>frm_Add_New_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Employee.resx">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Customer.resx">
+      <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Product.resx">
+      <DependentUpon>frm_Add_New_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Brand.resx">
+      <DependentUpon>frm_Add_New_Brand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Stock.resx">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Admin_Entry_Form.resx">
+      <DependentUpon>frm_Admin_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Customer_Entry_Form.resx">
+      <DependentUpon>frm_Customer_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Customer_Report.resx">
+      <DependentUpon>frm_Customer_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Delete_User.resx">
+      <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Distributor_Entry_Form.resx">
+      <DependentUpon>frm_Distributor_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Distributor_Report.resx">
+      <DependentUpon>frm_Distributor_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Employee_Entry_Form.resx">
+      <DependentUpon>frm_Employee_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Employee_Report.resx">
+      <DependentUpon>frm_Employee_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Loading.resx">
+      <DependentUpon>frm_Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main_Entry_Form.resx">
+      <DependentUpon>frm_Main_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Product_Entry_Form.resx">
+      <DependentUpon>frm_Product_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Search_Or_Update_Distributor.resx">
+      <DependentUpon>frm_Search_Or_Update_Distributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Search_Or_Update_Employee.resx">
+      <DependentUpon>frm_Search_Or_Update_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_User.resx">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Stock_Report.resx">
+      <DependentUpon>frm_Stock_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_User.resx">
+      <DependentUpon>frm_Update_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_User_Management.resx">
+      <DependentUpon>frm_User_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_All_Distributors.resx">
+      <DependentUpon>frm_View_All_Distributors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_All_Employees.resx">
+      <DependentUpon>frm_View_All_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Customer_Details.resx">
+      <DependentUpon>frm_View_Customer_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Stock_Details.resx">
+      <DependentUpon>frm_View_Stock_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Stock_Report_Details.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Stock_Report_Details.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Customer_DataSet1.xsc">
+      <DependentUpon>Customer_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Customer_DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Customer_DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Customer_DataSet1.xss">
+      <DependentUpon>Customer_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet.xsc">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_Electronic_Accessories_ShowroomDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet.xss">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet1.xsc">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_Electronic_Accessories_ShowroomDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet1.xss">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet2.xsc">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_Electronic_Accessories_ShowroomDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet2.xss">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet3.xsc">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_Electronic_Accessories_ShowroomDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_Electronic_Accessories_ShowroomDataSet3.xss">
+      <DependentUpon>DB_Electronic_Accessories_ShowroomDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-22 at 11.12.42 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-05-23 at 9.27.20 AM.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

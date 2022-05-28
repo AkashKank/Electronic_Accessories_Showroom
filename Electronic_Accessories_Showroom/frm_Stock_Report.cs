@@ -30,5 +30,14 @@ namespace Electronic_Accessories_Showroom
 
             crystalReportViewer1.ReportSource = dcr;
         }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            frm_Reports_Entry_Form obj = new frm_Reports_Entry_Form();
+
+            obj.WindowState = FormWindowState.Maximized;
+            this.Hide();
+            obj.Show();
+        }
     }
 }

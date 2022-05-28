@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main_Entry_Form));
             this.pnl_Main_Entry_Form = new System.Windows.Forms.Panel();
+            this.pb_Shivaji = new System.Windows.Forms.PictureBox();
             this.pnl_Admin = new System.Windows.Forms.Panel();
             this.lbl_Admin = new System.Windows.Forms.Label();
             this.btn_Reports = new System.Windows.Forms.Button();
@@ -39,13 +40,12 @@
             this.pb_Products = new System.Windows.Forms.PictureBox();
             this.btn_Products = new System.Windows.Forms.Button();
             this.bn_Log_Out = new System.Windows.Forms.Button();
-            this.pb_Shivaji = new System.Windows.Forms.PictureBox();
             this.pnl_Main_Entry_Form.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Shivaji)).BeginInit();
             this.pnl_Admin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Welcome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Customers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Products)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Shivaji)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Main_Entry_Form
@@ -59,6 +59,16 @@
             this.pnl_Main_Entry_Form.Name = "pnl_Main_Entry_Form";
             this.pnl_Main_Entry_Form.Size = new System.Drawing.Size(460, 1138);
             this.pnl_Main_Entry_Form.TabIndex = 1;
+            // 
+            // pb_Shivaji
+            // 
+            this.pb_Shivaji.Image = global::Electronic_Accessories_Showroom.Properties.Resources.Frame_5;
+            this.pb_Shivaji.Location = new System.Drawing.Point(12, 442);
+            this.pb_Shivaji.Name = "pb_Shivaji";
+            this.pb_Shivaji.Size = new System.Drawing.Size(437, 474);
+            this.pb_Shivaji.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_Shivaji.TabIndex = 8;
+            this.pb_Shivaji.TabStop = false;
             // 
             // pnl_Admin
             // 
@@ -91,6 +101,7 @@
             this.btn_Reports.TabIndex = 3;
             this.btn_Reports.Text = "Reports";
             this.btn_Reports.UseVisualStyleBackColor = false;
+            this.btn_Reports.Click += new System.EventHandler(this.btn_Reports_Click);
             // 
             // pb_Welcome
             // 
@@ -159,16 +170,6 @@
             this.bn_Log_Out.UseVisualStyleBackColor = true;
             this.bn_Log_Out.Click += new System.EventHandler(this.bn_Log_Out_Click);
             // 
-            // pb_Shivaji
-            // 
-            this.pb_Shivaji.Image = global::Electronic_Accessories_Showroom.Properties.Resources.Frame_5;
-            this.pb_Shivaji.Location = new System.Drawing.Point(12, 442);
-            this.pb_Shivaji.Name = "pb_Shivaji";
-            this.pb_Shivaji.Size = new System.Drawing.Size(437, 474);
-            this.pb_Shivaji.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_Shivaji.TabIndex = 8;
-            this.pb_Shivaji.TabStop = false;
-            // 
             // frm_Main_Entry_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,12 +187,12 @@
             this.Text = "Main Entry Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnl_Main_Entry_Form.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Shivaji)).EndInit();
             this.pnl_Admin.ResumeLayout(false);
             this.pnl_Admin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Welcome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Customers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Products)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Shivaji)).EndInit();
             this.ResumeLayout(false);
 
         }

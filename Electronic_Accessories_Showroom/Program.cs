@@ -16,7 +16,7 @@ namespace Electronic_Accessories_Showroom
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new frm_Loading());
-            Application.Run(new frm_Customer_Report());
+            Application.Run(new frm_Loading());
         }
     }
 }

@@ -43,6 +43,7 @@
             this.crystalReportViewer1.Size = new System.Drawing.Size(1926, 1056);
             this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // btn_Back
             // 
@@ -56,6 +57,7 @@
             this.btn_Back.TabIndex = 21;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // frm_Customer_Report
             // 

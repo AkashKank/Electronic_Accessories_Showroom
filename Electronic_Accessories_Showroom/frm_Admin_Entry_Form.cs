@@ -81,5 +81,14 @@ namespace Electronic_Accessories_Showroom
             this.Hide();
             obj.Show();
         }
+
+        private void btn_Reports_Click(object sender, EventArgs e)
+        {
+            frm_Reports_Entry_Form obj = new frm_Reports_Entry_Form();
+
+            obj.WindowState = FormWindowState.Maximized;
+            this.Hide();
+            obj.Show();
+        }
     }
 }

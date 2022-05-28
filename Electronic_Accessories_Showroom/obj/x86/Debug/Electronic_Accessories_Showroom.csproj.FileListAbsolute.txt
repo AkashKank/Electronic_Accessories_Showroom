@@ -35,3 +35,4 @@ D:\C#\Project\Electronic_Accessories_Showroom\Electronic_Accessories_Showroom\ob
 D:\C#\Project\Electronic_Accessories_Showroom\Electronic_Accessories_Showroom\obj\x86\Debug\Electronic_Accessories_Showroom.frm_Distributor_Report.resources
 D:\C#\Project\Electronic_Accessories_Showroom\Electronic_Accessories_Showroom\obj\x86\Debug\Electronic_Accessories_Showroom.frm_Employee_Report.resources
 D:\C#\Project\Electronic_Accessories_Showroom\Electronic_Accessories_Showroom\obj\x86\Debug\Electronic_Accessories_Showroom.frm_Stock_Report.resources
+D:\C#\Project\Electronic_Accessories_Showroom\Electronic_Accessories_Showroom\obj\x86\Debug\Electronic_Accessories_Showroom.frm_Reports_Entry_Form.resources

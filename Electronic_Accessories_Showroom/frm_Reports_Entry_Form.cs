@@ -87,7 +87,6 @@ namespace Electronic_Accessories_Showroom
             if (No == 0)
             {
                 frm_Admin_Entry_Form obj = new frm_Admin_Entry_Form();
-
                 obj.WindowState = FormWindowState.Maximized;
                 this.Hide();
                 obj.Show();

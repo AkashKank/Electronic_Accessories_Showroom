@@ -52,7 +52,7 @@ namespace Electronic_Accessories_Showroom
 
         private void btn_Reports_Click(object sender, EventArgs e)
         {
-            frm_Reports_Entry_Form obj = new frm_Reports_Entry_Form();
+            frm_Reports_Entry_Form obj = new frm_Reports_Entry_Form("User");
 
             obj.WindowState = FormWindowState.Maximized;
             this.Hide();

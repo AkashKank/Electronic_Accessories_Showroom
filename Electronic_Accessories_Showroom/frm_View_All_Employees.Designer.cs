@@ -51,7 +51,6 @@
             this.employeeDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_Electronic_Accessories_ShowroomDataSet2 = new Electronic_Accessories_Showroom.DB_Electronic_Accessories_ShowroomDataSet2();
             this.pnl_Employee_ID = new System.Windows.Forms.Panel();
-            this.btn_Search = new System.Windows.Forms.Button();
             this.tb_Employee_ID = new System.Windows.Forms.TextBox();
             this.lbl_Employee_ID = new System.Windows.Forms.Label();
             this.lbl_Employee_Details = new System.Windows.Forms.Label();
@@ -235,7 +234,6 @@
             // pnl_Employee_ID
             // 
             this.pnl_Employee_ID.BackColor = System.Drawing.Color.Silver;
-            this.pnl_Employee_ID.Controls.Add(this.btn_Search);
             this.pnl_Employee_ID.Controls.Add(this.tb_Employee_ID);
             this.pnl_Employee_ID.Controls.Add(this.lbl_Employee_ID);
             this.pnl_Employee_ID.Location = new System.Drawing.Point(269, 37);
@@ -243,23 +241,10 @@
             this.pnl_Employee_ID.Size = new System.Drawing.Size(1464, 99);
             this.pnl_Employee_ID.TabIndex = 0;
             // 
-            // btn_Search
-            // 
-            this.btn_Search.BackColor = System.Drawing.Color.Coral;
-            this.btn_Search.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold);
-            this.btn_Search.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Search.Location = new System.Drawing.Point(1139, 24);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(169, 52);
-            this.btn_Search.TabIndex = 2;
-            this.btn_Search.Text = "Search";
-            this.btn_Search.UseVisualStyleBackColor = false;
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
-            // 
             // tb_Employee_ID
             // 
             this.tb_Employee_ID.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold);
-            this.tb_Employee_ID.Location = new System.Drawing.Point(460, 35);
+            this.tb_Employee_ID.Location = new System.Drawing.Point(694, 36);
             this.tb_Employee_ID.MaxLength = 10;
             this.tb_Employee_ID.Name = "tb_Employee_ID";
             this.tb_Employee_ID.Size = new System.Drawing.Size(398, 35);
@@ -272,7 +257,7 @@
             this.lbl_Employee_ID.BackColor = System.Drawing.Color.MistyRose;
             this.lbl_Employee_ID.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Employee_ID.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbl_Employee_ID.Location = new System.Drawing.Point(149, 36);
+            this.lbl_Employee_ID.Location = new System.Drawing.Point(380, 36);
             this.lbl_Employee_ID.Name = "lbl_Employee_ID";
             this.lbl_Employee_ID.Size = new System.Drawing.Size(163, 33);
             this.lbl_Employee_ID.TabIndex = 4;
@@ -344,7 +329,6 @@
         private System.Windows.Forms.Panel pnl_Employee_ID;
         private System.Windows.Forms.Label lbl_Employee_ID;
         private System.Windows.Forms.TextBox tb_Employee_ID;
-        private System.Windows.Forms.Button btn_Search;
         private DB_Electronic_Accessories_ShowroomDataSet2 dB_Electronic_Accessories_ShowroomDataSet2;
         private System.Windows.Forms.BindingSource employeeDetailsBindingSource;
         private DB_Electronic_Accessories_ShowroomDataSet2TableAdapters.Employee_DetailsTableAdapter employee_DetailsTableAdapter;
